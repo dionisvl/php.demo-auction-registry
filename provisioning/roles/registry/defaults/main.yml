@@ -1,4 +1,4 @@
-certbot_email: mail@deworker.pro
+certbot_email: info@phpqa.ru
 certbot_hosts:
-    - registry.demo-auction.deworker.pro
-    - cache-registry.demo-auction.deworker.pro
+    - registry.demo-auction.phpqa.ru
+    - cache-registry.demo-auction.phpqa.ru
