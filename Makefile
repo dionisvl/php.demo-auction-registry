@@ -17,6 +17,7 @@ docker-pull:
 docker-build:
 	docker-compose build
 
+# HOST=164.215.102.35 PORT=222 HTPASSWD_FILE=htpasswd make deploy
 deploy:
 	ssh deploy@${HOST} -p ${PORT} 'rm -rf registry && mkdir registry'
 	scp -P ${PORT} docker-compose-production.yml deploy@${HOST}:registry/docker-compose.yml

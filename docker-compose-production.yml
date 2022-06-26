@@ -4,11 +4,11 @@ services:
         image: nginx:alpine
         restart: always
         ports:
-#            - "80:80"
-#            - "443:443"
-            - "3000:3000"
+            - "80:80"
+            - "443:443"
+#           - "3000:3000"
         volumes:
-            - /etc/letsencrypt:/etc/letsencrypt:ro
+            - /etc/letsencrypt:/etc/letsencrypt:rw
             - /var/www/html:/var/www/html:ro
             - ./docker/production/nginx/conf.d:/etc/nginx/conf.d:ro
             - ./htpasswd:/etc/nginx/auth/htpasswd:ro

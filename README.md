@@ -17,8 +17,8 @@
 - запустим команду для установки со всеми необходимыми параметрами  
 `HOST=164.215.102.35 PORT=222  HTPASSWD_FILE=htpasswd make deploy`
 - Переходим по ссылкам
-  - http://registry.demo-auction.phpqa.ru:3000/v2/
-  - http://cache-registry.demo-auction.phpqa.ru:3000/v2/
+  - http://registry.demo-auction.phpqa.ru/v2/
+  - http://cache-registry.demo-auction.phpqa.ru/v2/
 - Логин пароль см. из п.1 
 
 
@@ -31,7 +31,7 @@
 - or on Windows: `C:\Users\User\.docker\daemon.json`
 ```
 {
-  "registry-mirrors": ["http://cache-registry.demo-auction.phpqa.ru:3000"]
+  "registry-mirrors": ["http://cache-registry.demo-auction.phpqa.ru"]
 }
 ```
-- go to url: http://cache-registry.demo-auction.phpqa.ru:3000/v2/_catalog
+- go to url: http://cache-registry.demo-auction.phpqa.ru/v2/_catalog
